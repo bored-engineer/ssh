@@ -24,7 +24,7 @@ import (
 	"math/big"
 	"sync"
 
-	"code.google.com/p/go.crypto/ssh"
+	"github.com/bored-engineer/ssh"
 )
 
 // Agent represents the capabilities of an ssh-agent.

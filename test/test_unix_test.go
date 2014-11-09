@@ -21,8 +21,8 @@ import (
 	"testing"
 	"text/template"
 
-	"code.google.com/p/go.crypto/ssh"
-	"code.google.com/p/go.crypto/ssh/testdata"
+	"github.com/bored-engineer/ssh"
+	"github.com/bored-engineer/ssh/testdata"
 )
 
 const sshd_config = `

@@ -12,7 +12,7 @@ import (
 	"net"
 	"net/http"
 
-	"code.google.com/p/go.crypto/ssh/terminal"
+	"github.com/bored-engineer/ssh/terminal"
 )
 
 func ExampleNewServerConn() {

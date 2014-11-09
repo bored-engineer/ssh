@@ -10,7 +10,7 @@ import (
 	"net"
 	"sync"
 
-	"code.google.com/p/go.crypto/ssh"
+	"github.com/bored-engineer/ssh"
 )
 
 // RequestAgentForwarding sets up agent forwarding for the session.
