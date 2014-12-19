@@ -89,11 +89,11 @@ func NewClientConnFromTransport(t Transport) (Conn, <-chan NewChannel, <-chan *R
 // clientHandshake performs the client side key exchange. See RFC 4253 Section
 // 7.
 func (c *connection) clientHandshake(dialAddress string, config *ClientConfig) error {
-	c.clientVersion = []byte(packageVersion)
 	if config.ClientVersion != "" {
 		c.clientVersion = []byte(config.ClientVersion)
+	} else {
+		c.clientVersion = []byte(packageVersion)
 	}
-
 	var err error
 	c.serverVersion, err = exchangeVersions(c.sshConn.conn, c.clientVersion)
 	if err != nil {
