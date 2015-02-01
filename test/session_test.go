@@ -11,10 +11,11 @@ package test
 import (
 	"bytes"
 	"errors"
-	"github.com/bored-engineer/ssh"
 	"io"
 	"strings"
 	"testing"
+
+	"github.com/bored-engineer/ssh"
 )
 
 func TestRunCommandSuccess(t *testing.T) {
