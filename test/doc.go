@@ -3,5 +3,5 @@
 // license that can be found in the LICENSE file.
 
 // This package contains integration tests for the
-// code.google.com/p/go.crypto/ssh package.
+// github.com/bored-engineer/ssh package.
 package test // import "github.com/bored-engineer/ssh/test"
