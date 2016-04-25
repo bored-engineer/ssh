@@ -131,14 +131,10 @@ func newMux(p Transport) *mux {
 
 func (m *mux) sendMessage(msg interface{}) error {
 	p := Marshal(msg)
-<<<<<<< ours
-	return m.conn.writePacket(p)
-=======
 	if debugMux {
 		log.Printf("send global(%d): %#v", m.chanList.offset, msg)
 	}
 	return m.conn.WritePacket(p)
->>>>>>> theirs
 }
 
 func (m *mux) SendRequest(name string, wantReply bool, payload []byte) (bool, []byte, error) {
