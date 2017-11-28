@@ -2,6 +2,6 @@
 // Use of this source code is governed by a BSD-style
 // license that can be found in the LICENSE file.
 
-// This package contains integration tests for the
+// Package test contains integration tests for the
 // github.com/bored-engineer/ssh package.
 package test // import "github.com/bored-engineer/ssh/test"
